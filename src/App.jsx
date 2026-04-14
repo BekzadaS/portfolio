@@ -116,6 +116,16 @@ function App() {
                 <p style={styles.educationDescription}>{item.description}</p>
               </div>
             ))}
+            {item.diploma && (
+              <a
+                href={item.diploma}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.diplomaLink}
+              >
+                📄 Диплом
+              </a>
+            )}
           </div>
         </section>
 
@@ -418,6 +428,14 @@ const styles = {
     textDecoration: "none",
     fontWeight: "600",
     transition: "0.2s",
+  },
+
+  diplomaLink: {
+    display: "inline-block",
+    marginTop: "10px",
+    color: "#2563eb",
+    textDecoration: "none",
+    fontWeight: "600",
   },
 };
 

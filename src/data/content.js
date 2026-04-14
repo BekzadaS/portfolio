@@ -47,8 +47,9 @@ export const content = {
                 },
                 {
                     period: "2025 — 2026",
-                    place: "Академия TOP IT - РФ",
+                    place: "Академия TOP IT",
                     description: "Годовой курс по направлению Fullstack Development.",
+                    diploma: "/diploma.pdf",
                 },
             ],
         },
@@ -152,8 +153,9 @@ export const content = {
                 },
                 {
                     period: "2025 — 2026",
-                    place: "TOP IT Academy - RF",
+                    place: "TOP IT Academy",
                     description: "One-year course in Fullstack Development.",
+                    diploma: "/diploma.pdf",
                 },
                 {
                     place: "Bank (Operations Department)",
