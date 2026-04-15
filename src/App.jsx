@@ -111,21 +111,24 @@ function App() {
           <div style={styles.educationList}>
             {text.education.items.map((item, index) => (
               <div key={index} style={styles.educationCard}>
+
                 <p style={styles.educationPeriod}>{item.period}</p>
                 <h3 style={styles.educationPlace}>{item.place}</h3>
                 <p style={styles.educationDescription}>{item.description}</p>
+
+                {item.diploma && (
+                  <a
+                    href={item.diploma}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={styles.diplomaLink}
+                  >
+                    📄 Диплом
+                  </a>
+                )}
+
               </div>
             ))}
-            {item.diploma && (
-              <a
-                href={item.diploma}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={styles.diplomaLink}
-              >
-                📄 Диплом
-              </a>
-            )}
           </div>
         </section>
 
