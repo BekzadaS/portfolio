@@ -39,11 +39,12 @@ export const content = {
                     period: "2019 — 2023",
                     place: "Майлуу-Сууйский колледж имени Б. Осмонова - КР",
                     description: "Специальность: техник-программист.",
+                    diploma: "/college-diploma.pdf",
                 },
                 {
                     period: "2023 — настоящее время",
                     place: "Жалал-Абадский государственный университет - КР",
-                    description: "Обучение по направлению техник-программист.",
+                    description: "Обучение по направлению техник-программист (в процессе).",
                 },
                 {
                     period: "2025 — 2026",
@@ -145,11 +146,12 @@ export const content = {
                     period: "2019 — 2023",
                     place: "Mailuu-Suu College named after B. Osmonov - KR",
                     description: "Specialty: Programming Technician.",
+                    diploma: "/college-diploma.pdf",
                 },
                 {
                     period: "2023 — present",
                     place: "Jalal-Abad State University - KR",
-                    description: "Studying in the Programming Technician field.",
+                    description: "Studying in the Programming Technician field (in progress).",
                 },
                 {
                     period: "2025 — 2026",
