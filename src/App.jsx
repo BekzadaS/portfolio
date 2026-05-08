@@ -199,12 +199,20 @@ function App() {
 
 const styles = {
   header: {
+    position: "sticky",
+    top: "0",
+    zIndex: "1000",
+
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "20px 40px",
-    backgroundColor: "#ffffff",
-    borderBottom: "1px solid #e5e7eb",
+
+    padding: "18px 40px",
+
+    backgroundColor: "rgba(255,255,255,0.85)",
+    backdropFilter: "blur(12px)",
+
+    borderBottom: "1px solid #dbe3ee",
   },
 
   languageSwitcher: {
@@ -233,21 +241,31 @@ const styles = {
   },
 
   heroSection: {
-    padding: "80px 40px 40px",
+    padding: "120px 40px 80px",
+    maxWidth: "1200px",
   },
 
   heroTitle: {
-    fontSize: "56px",
-    marginBottom: "20px",
-    color: "#0B1020",
-    maxWidth: "900px",
+    fontSize: "68px",
+    lineHeight: "1.05",
+    fontWeight: "800",
+
+    color: "#0f172a",
+
+    maxWidth: "850px",
+
+    marginBottom: "24px",
+
+    letterSpacing: "-2px",
   },
 
   heroText: {
     fontSize: "22px",
-    lineHeight: "1.6",
-    color: "#334155",
-    maxWidth: "800px",
+    lineHeight: "1.8",
+
+    color: "#475569",
+
+    maxWidth: "760px",
   },
 
   section: {
@@ -255,26 +273,34 @@ const styles = {
   },
 
   sectionTitle: {
-    fontSize: "40px",
-    marginBottom: "24px",
-    color: "#0B1020",
+    fontSize: "52px",
+    fontWeight: "800",
+    marginBottom: "32px",
+    color: "#0f172a",
+    letterSpacing: "-1px",
   },
 
   aboutBox: {
     backgroundColor: "#ffffff",
-    border: "1px solid #e5e7eb",
-    borderRadius: "16px",
-    padding: "28px",
-    maxWidth: "950px",
-    boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
+
+    border: "1px solid #dbe3ee",
+
+    borderRadius: "28px",
+
+    padding: "36px",
+
+    maxWidth: "980px",
+
+    boxShadow:
+      "0 10px 30px rgba(15, 23, 42, 0.06)",
   },
 
   // Обо мне 
   aboutText: {
-    fontSize: "18px",
-    lineHeight: "1.8",
-    color: "#334155",
-    marginBottom: "16px",
+    fontSize: "19px",
+    lineHeight: "1.9",
+    color: "#475569",
+    marginBottom: "18px",
   },
 
   // Навыки 
@@ -286,10 +312,11 @@ const styles = {
 
   skillsColumn: {
     backgroundColor: "#ffffff",
-    border: "1px solid #e5e7eb",
-    borderRadius: "16px",
-    padding: "24px",
-    boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
+    border: "1px solid #dbe3ee",
+    borderRadius: "28px",
+    padding: "32px",
+    boxShadow:
+      "0 10px 30px rgba(15, 23, 42, 0.06)",
   },
 
   skillsSubtitle: {
@@ -324,10 +351,11 @@ const styles = {
 
   educationCard: {
     backgroundColor: "#ffffff",
-    border: "1px solid #e5e7eb",
-    borderRadius: "16px",
-    padding: "24px",
-    boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
+    border: "1px solid #dbe3ee",
+    borderRadius: "28px",
+    padding: "32px",
+    boxShadow:
+      "0 10px 30px rgba(15, 23, 42, 0.06)",
   },
 
   educationPeriod: {
@@ -344,8 +372,8 @@ const styles = {
 
   educationDescription: {
     fontSize: "18px",
-    lineHeight: "1.7",
-    color: "#334155",
+    lineHeight: "1.8",
+    color: "#475569",
   },
 
   experienceList: {
@@ -355,10 +383,11 @@ const styles = {
 
   experienceCard: {
     backgroundColor: "#ffffff",
-    border: "1px solid #e5e7eb",
-    borderRadius: "16px",
-    padding: "24px",
-    boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
+    border: "1px solid #dbe3ee",
+    borderRadius: "28px",
+    padding: "32px",
+    boxShadow:
+      "0 10px 30px rgba(15, 23, 42, 0.06)",
   },
 
   experiencePlace: {
@@ -369,8 +398,8 @@ const styles = {
 
   experienceDescription: {
     fontSize: "18px",
-    lineHeight: "1.7",
-    color: "#334155",
+    lineHeight: "1.8",
+    color: "#475569",
   },
 
   contactsList: {
@@ -380,10 +409,11 @@ const styles = {
 
   contactCard: {
     backgroundColor: "#ffffff",
-    border: "1px solid #e5e7eb",
-    borderRadius: "16px",
-    padding: "24px",
-    boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
+    border: "1px solid #dbe3ee",
+    borderRadius: "28px",
+    padding: "32px",
+    boxShadow:
+      "0 10px 30px rgba(15, 23, 42, 0.06)",
   },
 
   contactLabel: {
@@ -408,11 +438,11 @@ const styles = {
 
   projectsBox: {
     backgroundColor: "#ffffff",
-    border: "1px solid #e5e7eb",
-    borderRadius: "16px",
+    border: "1px solid #dbe3ee",
+    borderRadius: "28px",
     padding: "32px",
-    maxWidth: "700px",
-    boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
+    boxShadow:
+      "0 10px 30px rgba(15, 23, 42, 0.06)",
   },
 
   projectsText: {
@@ -424,13 +454,14 @@ const styles = {
 
   githubButton: {
     display: "inline-block",
-    padding: "12px 20px",
-    backgroundColor: "#131936",
+    padding: "14px 24px",
+    backgroundColor: "#1f2a44",
     color: "#ffffff",
-    borderRadius: "8px",
-    textDecoration: "none",
-    fontWeight: "600",
+    borderRadius: "14px",
+    fontWeight: "700",
     transition: "0.2s",
+    boxShadow:
+      "0 8px 20px rgba(31, 42, 68, 0.18)",
   },
 
   diplomaLink: {

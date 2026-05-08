@@ -1,6 +1,18 @@
 :root {
-  --bg-main: #f5f7fb;
-  --text-main: #0b1020;
+  --bg-main: #f4f7fb;
+  --bg-soft: #eef2f8;
+  --white: #ffffff;
+
+  --accent: #1f2a44;
+  --accent-hover: #2d3b5f;
+
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+
+  --border: #dbe3ee;
+
+  --shadow:
+    0 10px 30px rgba(15, 23, 42, 0.06);
 }
 
 * {
@@ -9,8 +21,23 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-main);
   color: var(--text-main);
   font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
